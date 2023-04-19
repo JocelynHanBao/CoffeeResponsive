@@ -1,0 +1,29 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile {
+  display: block;
+}
+.mobile .cake {
+  width: 246px;
+  margin: 120px auto 48px;
+}
+.mobile .title {
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: #ffbf7e;
+  margin: 48px auto;
+}
+.mobile .desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+  color: #ffffff;
+}
+.mobile .desc > div {
+  margin-bottom: 12px;
+}

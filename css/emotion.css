@@ -1,0 +1,50 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+header {
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #ffbf7e;
+  padding: 68px 0 36px;
+}
+.pc {
+  padding-top: 140px;
+}
+.pc main {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.pc main .main-left img,
+.pc main .main-right img {
+  width: 76px;
+  margin-bottom: 64px;
+}
+.pc main .main-right {
+  margin-top: 300px;
+}
+.pc main .main-center {
+  height: 100%;
+  font-weight: 900;
+  font-size: 110px;
+  text-align: center;
+  color: #ffbf7e;
+  margin-top: 196px;
+}
+.mobile main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile main a {
+  display: block;
+}
+.mobile main a > img {
+  width: 68px;
+  height: 68px;
+  margin: 24px auto;
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>weather-info-5</title>
+    <!--css-->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/weather-info.css" />
+
+    <script src="../../js/common.js"></script>
+  </head>
+  <body>
+    <div id="back">
+      <img class="ico" src="../../img/ico.png" alt="" />
+    </div>
+
+    <!--pc-->
+    <div class="main pc">
+      <img
+        id="cornerImg"
+        class="corner-img"
+        src="../../img/weather/3.png"
+        alt=""
+      />
+      <img
+        id="centerImg"
+        class="center-img"
+        src="../../img/weather/group3.png"
+        alt=""
+      />
+      <div class="main-text">
+        <div id="desc" class="main-text-top">
+          <div>ESPRESSO</div>
+          <div>HOT WATER</div>
+        </div>
+
+        <div id="text" class="main-text-bot">
+          <div>LONG</div>
+          <div>BLACK</div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile-->
+    <div class="main mobile">
+      <header>WEATHER</header>
+      <main>
+        <img class="main-img" src="../../img/weather/5.png" alt="" />
+        <div class="main-text text5">
+          <div>LONG BLACK</div>
+        </div>
+        <div class="main-desc main-desc-5">
+          <img src="../../img/weather/group5.png" alt="" />
+          <div class="main-desc-text text1">ESPRESSO</div>
+          <div class="main-desc-text text2">HOT WATER</div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const text = document.querySelector("#text");
+      const desc = document.querySelector("#desc");
+      const cornerImg = document.querySelector("#cornerImg");
+      const centerImg = document.querySelector("#centerImg");
+
+      text.addEventListener("mouseenter", () => {
+        desc.style.opacity = "1";
+        cornerImg.style.transform = "scale(0.68)";
+        cornerImg.style.transformOrigin = "top right";
+        centerImg.style.opacity = "1";
+      });
+
+      text.addEventListener("mouseleave", () => {
+        desc.style.opacity = "0";
+        cornerImg.style.transform = "scale(1)";
+        centerImg.style.opacity = "0";
+      });
+    </script>
+  </body>
+</html>

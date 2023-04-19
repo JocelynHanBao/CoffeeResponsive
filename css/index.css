@@ -1,0 +1,88 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc header {
+  padding: 208px 0 82px 0;
+}
+.pc header .font {
+  width: 100%;
+  font-size: 110px;
+  font-weight: 900;
+  color: #6a4826;
+  margin: 12px auto;
+  text-align: center;
+}
+.pc header .font.active {
+  color: #ffbf7e;
+  cursor: pointer;
+}
+.pc header .header-bot {
+  margin-top: 24px;
+}
+.pc .nav {
+  display: flex;
+  justify-content: space-around;
+}
+.pc .nav > a {
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  color: #ffbf7e;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .nav > a > img {
+  width: 22px;
+  opacity: 0;
+  margin: 12px auto;
+}
+.pc .nav > a:hover img {
+  opacity: 1;
+}
+.mobile header {
+  padding-top: 20px;
+}
+.mobile header .font {
+  width: 100%;
+  display: block;
+  font-size: 80px;
+  font-weight: 900;
+  color: #6a4826;
+  margin: 12px auto;
+  text-align: center;
+}
+.mobile header .font.active {
+  color: #ffbf7e;
+  cursor: pointer;
+}
+.mobile .nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 36px;
+}
+.mobile .nav > a {
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  color: #392007;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile .nav > a > img {
+  width: 22px;
+  opacity: 0;
+  margin: 12px auto;
+}
+.mobile .nav > a:hover {
+  color: #ffbf7e;
+}
+.mobile .nav > a:hover img {
+  opacity: 1;
+}

@@ -1,0 +1,39 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+header {
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #ffbf7e;
+  padding-top: 68px;
+}
+.pc {
+  margin-top: 136px;
+}
+.pc .main-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pc .main-wrap .main-left img,
+.pc .main-wrap .main-right img {
+  width: 90px;
+  margin-bottom: 136px;
+}
+.pc .main-wrap .main-center {
+  font-weight: 900;
+  font-size: 110px;
+  text-align: center;
+  color: #ffbf7e;
+  margin: 0 184px;
+}
+.mobile main > div {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 42px auto 142px;
+}
+.mobile main > div > img {
+  width: 76px;
+}

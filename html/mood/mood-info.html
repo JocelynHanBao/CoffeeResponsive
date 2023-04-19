@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>mood-info</title>
+    <!--css-->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/mood-info.css" />
+
+    <script src="../../js/common.js"></script>
+  </head>
+  <body>
+    <div id="back">
+      <img class="ico" src="../../img/ico.png" alt="" />
+    </div>
+
+    <!--pc-->
+    <div class="main pc">
+      <div class="main-left">
+        <img id="img1PC" src="" alt="" />
+        <div id="title1PC"></div>
+      </div>
+      <div class="main-right">
+        <img id="img2PC" src="" alt="" />
+        <div id="title2PC"></div>
+      </div>
+    </div>
+
+    <!--mobile-->
+    <div class="main mobile">
+      <header>MOOD</header>
+      <main>
+        <div class="main-img">
+          <img id="img1" class="img1" src="" alt="" />
+          <img id="img2" class="img2" src="" alt="" />
+        </div>
+        <div class="main-desc">
+          <div id="title1" class="main-desc-title1"></div>
+          <div class="main-desc-title">COFFEE</div>
+          <div id="title2" class="main-desc-title2"></div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const img1 = document.getElementById("img1");
+      const img2 = document.getElementById("img2");
+      const title1 = document.getElementById("title1");
+      const title2 = document.getElementById("title2");
+
+      const img1PC = document.getElementById("img1PC");
+      const img2PC = document.getElementById("img2PC");
+      const title1PC = document.getElementById("title1PC");
+      const title2PC = document.getElementById("title2PC");
+
+      const urlQuery = window.location.search;
+      const moodId = urlQuery.split("?")[1]?.split("=")[1];
+
+      img1.src = `../../img/mood/${moodId}.png`;
+      img1PC.src = `../../img/mood/${moodId}.png`;
+      img2.src = `../../img/mood/group${moodId}.png`;
+      img2PC.src = `../../img/mood/group${moodId}.png`;
+
+      const titleObj = {
+        1: ["affogato", "espresso + ice cream"],
+        2: ["iced coffee", "black coffee + ice + syrup"],
+        3: ["macchiato", "espresso + foamed milk + cocoa"],
+        4: ["mocha", "espresso + milk + chocolate"],
+        5: ["flat white", "steamed milk + espresso"],
+        6: ["cappuccino", "espresso + hot milk + steamed milk foam"],
+      };
+
+      title1.innerText = titleObj[moodId][0];
+      title1PC.innerText = titleObj[moodId][0];
+      title2.innerText = titleObj[moodId][1];
+      title2PC.innerText = titleObj[moodId][1];
+    </script>
+  </body>
+</html>

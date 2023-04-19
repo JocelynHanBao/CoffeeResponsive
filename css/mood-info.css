@@ -1,0 +1,124 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pc .main-left {
+  margin-left: 80px;
+}
+.pc .main-left > img {
+  width: 90px;
+  margin: 0 auto 24px;
+  cursor: pointer;
+}
+.pc .main-left > div {
+  font-weight: 900;
+  font-size: 60px;
+  text-align: center;
+  color: #d9d9d9;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .main-left:hover > div {
+  opacity: 1;
+}
+.pc .main-left:hover + .main-right {
+  display: block;
+}
+.pc .main-right {
+  margin-right: 200px;
+  display: none;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .main-right > img {
+  width: 426px;
+  margin: 0 auto 36px;
+}
+.pc .main-right > div {
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: #d9d9d9;
+}
+.mobile header {
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #ffbf7e;
+  padding-top: 68px;
+}
+.mobile main .main-img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 68px auto 32px;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-img > img {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-img > img.img1 {
+  opacity: 1;
+  z-index: 10;
+}
+.mobile main .main-img > img.img2 {
+  opacity: 0;
+  z-index: 11;
+}
+.mobile main .main-img:hover > img.img1 {
+  opacity: 0;
+}
+.mobile main .main-img:hover > img.img2 {
+  opacity: 1;
+}
+.mobile main .main-desc {
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-desc .main-desc-title1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: #d9d9d9;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-desc .main-desc-title {
+  font-weight: 900;
+  font-size: 45px;
+  color: #ffbf7e;
+  margin: 12px auto;
+}
+.mobile main .main-desc .main-desc-title2 {
+  font-weight: 900;
+  font-size: 16px;
+  color: #d9d9d9;
+  line-height: 24px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-desc:hover .main-desc-title1,
+.mobile main .main-desc:hover .main-desc-title2 {
+  opacity: 1;
+}
+.main-img:hover + .main-desc > .main-desc-title1,
+.main-img:hover + .main-desc > .main-desc-title2 {
+  opacity: 1;
+}

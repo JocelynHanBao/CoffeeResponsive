@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>emotion-info</title>
+    <!--css-->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/emotion-info.css" />
+
+    <script src="../../js/common.js"></script>
+  </head>
+  <body>
+    <div id="back">
+      <img class="ico" src="../../img/ico.png" alt="" />
+    </div>
+
+    <!--pc-->
+    <div class="main pc">
+      <a id="jumpPC" class="jump-img">
+        <img class="img1" src="../../img/emotion/default.png" alt="" />
+      </a>
+
+      <main id="mainPC">
+        <div class="main-text text1">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text1PC"></span>
+          </div>
+        </div>
+        <div class="main-text text2">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text2PC"></span>
+          </div>
+        </div>
+        <div class="main-text text3">
+          <div class="main-text-wrap long">
+            <img src="../../img/text.png" alt="" />
+            <span id="text3PC"></span>
+          </div>
+        </div>
+        <div class="main-text text4">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text4PC"></span>
+          </div>
+        </div>
+        <div class="main-text text5">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text5PC"></span>
+          </div>
+        </div>
+        <div class="main-text text6">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text6PC"></span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!--mobile-->
+    <div class="main mobile">
+      <header>EMOTION</header>
+      <main>
+        <a id="jump" class="main-img">
+          <img class="img1" src="../../img/emotion/default.png" alt="" />
+          <img id="img2" class="img2" src="" alt="" />
+        </a>
+        <div class="main-text text1">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text1"></span>
+          </div>
+        </div>
+        <div class="main-text text2">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text2"></span>
+          </div>
+        </div>
+        <div class="main-text text3">
+          <div class="main-text-wrap long">
+            <img src="../../img/text.png" alt="" />
+            <span id="text3"></span>
+          </div>
+        </div>
+        <div class="main-text text4">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text4"></span>
+          </div>
+        </div>
+        <div class="main-text text5">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text5"></span>
+          </div>
+        </div>
+        <div class="main-text text6">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text6"></span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const jump = document.getElementById("jump");
+      const jumpPC = document.getElementById("jumpPC");
+      const img2 = document.getElementById("img2");
+      const text1 = document.getElementById("text1");
+      const text2 = document.getElementById("text2");
+      const text3 = document.getElementById("text3");
+      const text4 = document.getElementById("text4");
+      const text5 = document.getElementById("text5");
+      const text6 = document.getElementById("text6");
+
+      const text1PC = document.getElementById("text1PC");
+      const text2PC = document.getElementById("text2PC");
+      const text3PC = document.getElementById("text3PC");
+      const text4PC = document.getElementById("text4PC");
+      const text5PC = document.getElementById("text5PC");
+      const text6PC = document.getElementById("text6PC");
+
+      const mainPC = document.getElementById("mainPC");
+
+      const urlQuery = window.location.search;
+      const emotionId = urlQuery.split("?")[1]?.split("=")[1];
+
+      mainPC.className = `main-${emotionId}`;
+
+      jump.href = `./emotion-detail.html?id=${emotionId}`;
+      jumpPC.href = `./emotion-detail.html?id=${emotionId}`;
+
+      img2.src = `../../img/emotion/${emotionId}.png`;
+
+      const titleObj = {
+        1: [
+          "interest",
+          "calmness",
+          "entrancement",
+          "joy",
+          "excitement",
+          "satisfaction",
+        ],
+        2: [
+          "admiration",
+          "boredom",
+          "amusement",
+          "disgust",
+          "adoration",
+          "adoration",
+        ],
+        3: ["anxiety", "awe", "awkwardness", "craving", "nostalgia", "relief"],
+        4: [
+          "admiration",
+          "boredom",
+          "amusement",
+          "disgust",
+          "adoration",
+          "adoration",
+        ],
+      };
+
+      text1.innerText = titleObj[emotionId][0];
+      text2.innerText = titleObj[emotionId][1];
+      text3.innerText = titleObj[emotionId][2];
+      text4.innerText = titleObj[emotionId][3];
+      text5.innerText = titleObj[emotionId][4];
+      text6.innerText = titleObj[emotionId][5];
+
+      text1PC.innerText = titleObj[emotionId][0];
+      text2PC.innerText = titleObj[emotionId][1];
+      text3PC.innerText = titleObj[emotionId][2];
+      text4PC.innerText = titleObj[emotionId][3];
+      text5PC.innerText = titleObj[emotionId][4];
+      text6PC.innerText = titleObj[emotionId][5];
+    </script>
+  </body>
+</html>

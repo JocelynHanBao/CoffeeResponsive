@@ -1,0 +1,267 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .jump-img {
+  position: fixed;
+  top: 24%;
+  left: -6%;
+  cursor: pointer;
+  z-index: 10;
+}
+.pc .jump-img img {
+  width: 300px;
+  object-fit: contain;
+}
+.pc main {
+  position: relative;
+  padding: 80px 8% 0 20%;
+}
+.pc main .main-text {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 50px;
+}
+.pc main .main-text .main-text-wrap {
+  position: relative;
+  width: 284px;
+  height: 58px;
+}
+.pc main .main-text .main-text-wrap.long {
+  width: 338px;
+  height: 58px;
+}
+.pc main .main-text .main-text-wrap > img {
+  width: 100%;
+  height: 100%;
+}
+.pc main .main-text .main-text-wrap > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  left: 0;
+  top: 0;
+}
+.pc main .main-arrow {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: 66px;
+  object-fit: contain;
+  z-index: 10;
+}
+.pc .main-1 .text1 {
+  justify-content: center;
+  margin-right: 8%;
+}
+.pc .main-1 .text2 {
+  justify-content: flex-end;
+}
+.pc .main-1 .text3 {
+  justify-content: flex-start;
+  margin-left: 8%;
+}
+.pc .main-1 .text4 {
+  justify-content: center;
+  margin-left: 24%;
+}
+.pc .main-1 .text5 {
+  justify-content: flex-start;
+}
+.pc .main-1 .text6 {
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+.pc .main-2 .text1 {
+  justify-content: flex-end;
+  margin-right: 4%;
+}
+.pc .main-2 .text2 {
+  justify-content: flex-end;
+  margin-right: 16%;
+}
+.pc .main-2 .text3 {
+  justify-content: flex-start;
+  margin-left: 18%;
+}
+.pc .main-2 .text4 {
+  justify-content: flex-start;
+  margin-left: 36%;
+}
+.pc .main-2 .text5 {
+  justify-content: flex-end;
+  margin-right: 8%;
+}
+.pc .main-2 .text6 {
+  justify-content: flex-end;
+}
+.pc .main-3 .text1 {
+  justify-content: flex-start;
+  margin-left: 8%;
+}
+.pc .main-3 .text2 {
+  justify-content: center;
+  margin-left: 28%;
+}
+.pc .main-3 .text3 {
+  justify-content: center;
+  margin-right: 12%;
+}
+.pc .main-3 .text4 {
+  justify-content: flex-end;
+}
+.pc .main-3 .text5 {
+  justify-content: flex-start;
+}
+.pc .main-3 .text6 {
+  justify-content: flex-end;
+  margin-right: 12%;
+}
+.pc .main-4 .text1 {
+  justify-content: flex-start;
+  margin-left: 6%;
+}
+.pc .main-4 .text2 {
+  justify-content: flex-end;
+  margin-right: 4%;
+}
+.pc .main-4 .text3 {
+  justify-content: flex-end;
+}
+.pc .main-4 .text4 {
+  justify-content: flex-start;
+}
+.pc .main-4 .text5 {
+  justify-content: flex-start;
+  margin-left: 8%;
+}
+.pc .main-4 .text6 {
+  justify-content: flex-end;
+  margin-right: 8%;
+}
+.pc .main-desc {
+  font-weight: 900;
+  font-size: 200px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+.mobile header {
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #ffbf7e;
+  padding: 68px 0 36px;
+}
+.mobile main {
+  width: 100%;
+  overflow: hidden;
+}
+.mobile main .main-img {
+  position: relative;
+  display: block;
+  height: 76px;
+  margin: 36px auto;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-img > img {
+  position: absolute;
+  width: 76px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-img > img.img1 {
+  opacity: 1;
+  z-index: 10;
+}
+.mobile main .main-img > img.img2 {
+  opacity: 0;
+  z-index: 11;
+}
+.mobile main .main-img:hover > img.img1 {
+  opacity: 0;
+}
+.mobile main .main-img:hover > img.img2 {
+  opacity: 1;
+}
+.mobile main .img2-detail {
+  width: 76px;
+  margin: 36px auto;
+}
+.mobile main .main-text {
+  display: flex;
+  justify-content: center;
+  margin: 42px auto;
+}
+.mobile main .main-text .main-text-wrap {
+  position: relative;
+  width: 284px;
+  height: 58px;
+}
+.mobile main .main-text .main-text-wrap.long {
+  width: 338px;
+  height: 58px;
+}
+.mobile main .main-text .main-text-wrap > img {
+  width: 100%;
+  height: 100%;
+}
+.mobile main .main-text .main-text-wrap > span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  line-height: 50px;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  left: 0;
+  top: 0;
+}
+.mobile main .main-text.text2,
+.mobile main .main-text.text5 {
+  justify-content: flex-start;
+}
+.mobile main .main-text.text2 .main-text-wrap,
+.mobile main .main-text.text5 .main-text-wrap {
+  left: -48px;
+}
+.mobile main .main-text.text3 {
+  justify-content: flex-end;
+}
+.mobile main .main-text.text3 .main-text-wrap {
+  right: -46px;
+}
+.mobile main .main-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 42px auto;
+}
+.mobile main .main-desc > div {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 200px;
+  transform: rotate(90deg);
+  white-space: nowrap;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <title>emotion-detail</title>
+    <!--css-->
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/emotion-info.css" />
+
+    <script src="../../js/common.js"></script>
+  </head>
+  <body>
+    <div id="back">
+      <img class="ico" src="../../img/ico.png" alt="" />
+    </div>
+
+    <!--pc-->
+    <div class="main pc">
+      <a id="jumpPC" class="jump-img">
+        <img id="img2PC" alt="" src="" />
+      </a>
+
+      <main id="mainPC">
+        <div class="main-text text1">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text1PC"></span>
+          </div>
+        </div>
+        <div class="main-text text2">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text2PC"></span>
+          </div>
+        </div>
+        <div class="main-text text3">
+          <div class="main-text-wrap long">
+            <img src="../../img/text.png" alt="" />
+            <span id="text3PC"></span>
+          </div>
+        </div>
+        <div class="main-text text4">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text4PC"></span>
+          </div>
+        </div>
+        <div class="main-text text5">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text5PC"></span>
+          </div>
+        </div>
+        <div class="main-text text6">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text6PC"></span>
+          </div>
+        </div>
+
+        <img class="main-arrow" src="../../img/arrow.png" alt="" />
+      </main>
+      <div id="mainDescTextPC" class="main-desc"></div>
+    </div>
+
+    <!--mobile-->
+    <div class="main mobile">
+      <header>EMOTION</header>
+      <main>
+        <img id="img2" class="img2-detail" src="" alt="" />
+        <div class="main-text text1">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text1"></span>
+          </div>
+        </div>
+        <div class="main-text text2">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text2"></span>
+          </div>
+        </div>
+        <div class="main-text text3">
+          <div class="main-text-wrap long">
+            <img src="../../img/text.png" alt="" />
+            <span id="text3"></span>
+          </div>
+        </div>
+        <div class="main-text text4">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text4"></span>
+          </div>
+        </div>
+        <div class="main-text text5">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text5"></span>
+          </div>
+        </div>
+        <div class="main-text text6">
+          <div class="main-text-wrap">
+            <img src="../../img/text.png" alt="" />
+            <span id="text6"></span>
+          </div>
+        </div>
+        <div id="mainDesc" class="main-desc">
+          <div id="mainDescText"></div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const img2 = document.getElementById("img2");
+      const img2PC = document.getElementById("img2PC");
+      const text1 = document.getElementById("text1");
+      const text2 = document.getElementById("text2");
+      const text3 = document.getElementById("text3");
+      const text4 = document.getElementById("text4");
+      const text5 = document.getElementById("text5");
+      const text6 = document.getElementById("text6");
+      const mainDesc = document.getElementById("mainDesc");
+      const mainDescText = document.getElementById("mainDescText");
+      const mainDescTextPC = document.getElementById("mainDescTextPC");
+
+      const text1PC = document.getElementById("text1PC");
+      const text2PC = document.getElementById("text2PC");
+      const text3PC = document.getElementById("text3PC");
+      const text4PC = document.getElementById("text4PC");
+      const text5PC = document.getElementById("text5PC");
+      const text6PC = document.getElementById("text6PC");
+
+      const mainPC = document.getElementById("mainPC");
+
+      const urlQuery = window.location.search;
+      const emotionId = urlQuery.split("?")[1]?.split("=")[1];
+
+      mainPC.className = `main-${emotionId}`;
+
+      img2.src = `../../img/emotion/${emotionId}.png`;
+      img2PC.src = `../../img/emotion/${emotionId}.png`;
+
+      const titleObj = {
+        1: [
+          "black coffee",
+          "ice",
+          "classic syrup",
+          "ice",
+          "black coffee",
+          "ice",
+          "ICED COFFEE",
+          "#DBA364",
+          "1270px",
+        ],
+        2: [
+          "coffee",
+          "ice",
+          "concentrate",
+          "cold water",
+          "coffee",
+          "cold water",
+          "COLD BREW",
+          "#A66631",
+          "1194px",
+        ],
+        3: [
+          "espresso",
+          "milk",
+          "chocolate",
+          "espresso",
+          "espresso",
+          "chocolate",
+          "MOCHA",
+          "#653923",
+          "804px",
+        ],
+        4: [
+          "espresso",
+          "double",
+          "espresso",
+          "espresso",
+          "double",
+          "espresso",
+          "DOPPIO",
+          "#422B1A",
+          "788px",
+        ],
+      };
+
+      text1.innerText = titleObj[emotionId][0];
+      text2.innerText = titleObj[emotionId][1];
+      text3.innerText = titleObj[emotionId][2];
+      text4.innerText = titleObj[emotionId][3];
+      text5.innerText = titleObj[emotionId][4];
+      text6.innerText = titleObj[emotionId][5];
+
+      text1PC.innerText = titleObj[emotionId][0];
+      text2PC.innerText = titleObj[emotionId][1];
+      text3PC.innerText = titleObj[emotionId][2];
+      text4PC.innerText = titleObj[emotionId][3];
+      text5PC.innerText = titleObj[emotionId][4];
+      text6PC.innerText = titleObj[emotionId][5];
+
+      mainDescText.innerText = titleObj[emotionId][6];
+      mainDescText.style.color = titleObj[emotionId][7];
+      mainDesc.style.height = titleObj[emotionId][8];
+
+      mainDescTextPC.innerText = titleObj[emotionId][6];
+      mainDescTextPC.style.color = titleObj[emotionId][7];
+    </script>
+  </body>
+</html>

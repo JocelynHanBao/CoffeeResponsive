@@ -1,0 +1,178 @@
+.transition {
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .corner-img {
+  position: fixed;
+  width: 540px;
+  object-fit: contain;
+  top: -16%;
+  right: -10%;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .center-img {
+  position: fixed;
+  height: 80%;
+  object-fit: contain;
+  top: 16%;
+  right: 10%;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .main-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.pc .main-text .main-text-top {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 50px;
+  color: #ffbf7e;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .main-text .main-text-top > div {
+  margin-top: 36px;
+}
+.pc .main-text .main-text-bot {
+  display: flex;
+  padding: 12px 0;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 200px;
+  color: rgba(255, 191, 126, 0.2);
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.pc .main-text .main-text-bot:hover {
+  color: #ffbf7e;
+}
+.mobile header {
+  font-weight: 900;
+  font-size: 46px;
+  text-align: center;
+  color: #ffbf7e;
+  padding-top: 48px;
+}
+.mobile main .main-img {
+  width: 360px;
+  height: 360px;
+  margin: 16px auto;
+}
+.mobile main .main-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-text > div {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 200px;
+  color: #392007;
+  transform: rotate(90deg);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.24s;
+}
+.mobile main .main-text:hover > div {
+  color: #ffbf7e;
+}
+.mobile main .main-text.text1 {
+  height: 776px;
+}
+.mobile main .main-text.text2 {
+  height: 1982px;
+}
+.mobile main .main-text.text3 {
+  height: 1198px;
+}
+.mobile main .main-text.text4 {
+  height: 1388px;
+}
+.mobile main .main-text.text5 {
+  height: 1294px;
+}
+.mobile main .main-text.text6 {
+  height: 776px;
+}
+.mobile main .main-desc {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.mobile main .main-desc > img {
+  margin: 0 auto;
+}
+.mobile main .main-desc .main-desc-text {
+  position: absolute;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffbf7e;
+  padding: 12px;
+  border-bottom: 3px solid #ffbf7e;
+  z-index: 10;
+}
+.mobile main .main-desc-1 .text1 {
+  top: 36%;
+  right: 0;
+}
+.mobile main .main-desc-1 .text2 {
+  top: 50%;
+  left: 0;
+}
+.mobile main .main-desc-1 .text3 {
+  top: 64%;
+  right: 0;
+}
+.mobile main .main-desc-2 .text1 {
+  top: 36%;
+  left: 0;
+}
+.mobile main .main-desc-2 .text2 {
+  top: 50%;
+  left: 108px;
+}
+.mobile main .main-desc-2 .text3 {
+  top: 64%;
+  right: 0;
+}
+.mobile main .main-desc-3 .text1 {
+  top: 36%;
+  left: 0;
+}
+.mobile main .main-desc-3 .text2 {
+  top: 50%;
+  right: 0;
+}
+.mobile main .main-desc-4 .text1 {
+  top: 36%;
+  right: 0;
+}
+.mobile main .main-desc-4 .text2 {
+  top: 50%;
+  left: 0;
+}
+.mobile main .main-desc-4 .text3 {
+  top: 64%;
+  right: 0;
+}
+.mobile main .main-desc-5 .text1 {
+  top: 36%;
+  left: 0;
+}
+.mobile main .main-desc-5 .text2 {
+  top: 50%;
+  right: 0;
+}
